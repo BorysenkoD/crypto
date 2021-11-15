@@ -15,8 +15,7 @@ body{
 .header{
 	background: no-repeat url("../img/hero-bg.png") #f3f7f9;
 	background-size: contain;
-	box-sizing: border-box;
-	background-position: right;
+	background-position: top 10% right;
 }
 
 .top-header{
