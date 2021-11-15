@@ -844,6 +844,55 @@ background-color: #49a7f3;
 		gap: 20px;
 	}
 
+	.header{
+		background: url("../img/hero-bg.png") no-repeat #f3f7f9;
+		background-position: top 10% left 20%;
+	}
+
+	.wrapp-started{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-get-started{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		text-align: left;
+	}
+
+	.header-title{
+		color: #20509e;
+		line-height: 60px;
+		font-weight: normal;
+		font-size: 50px;
+	}
+
+	.img-header{
+		width: 80%;
+		height: auto;
+	}
+
+/*----*/
+
+.preface{
+	text-align: center;
+}
+
+.preface-wrapp{
+		display: inline-flex;
+		flex-direction: column;
+		gap: 10px;
+		order: -1;
+		width: 80%;
+		align-items: center;
+		margin: 0 auto;
+}
+
+.preface-text {
+    margin-right: 0;
+    text-align: left;
+}
 
 /*----*/
 
@@ -880,7 +929,7 @@ background-color: #49a7f3;
 	.statistics-wrapp{
 		display: flex;
 		flex-direction: column;
-		column-gap: 15px;
+		gap: 15px;
 	}
 
 
