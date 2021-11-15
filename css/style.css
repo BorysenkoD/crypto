@@ -815,17 +815,24 @@ background-color: #49a7f3;
 	align-items: center;
 }
 
-.footer-contacts{
+.footer-terms{
 	display: inline-flex;
+	justify-content: space-between;
 	column-gap: 10px;
 }
 
-.footer-contacts a{
+.footer-terms a{
 	text-decoration: none;
 	color:#75849a;
 }
 
+.terms-paper{
+	display: inline-flex;
+	column-gap: 10px;
+}
 
+
+/*-------------@MEDIA-----------------------*/
 
 @media screen and (max-width: 985px){
 
@@ -859,6 +866,7 @@ background-color: #49a7f3;
 		flex-direction: column;
 		gap: 10px;
 		text-align: left;
+		align-self: center;
 	}
 
 	.header-title{
@@ -866,6 +874,7 @@ background-color: #49a7f3;
 		line-height: 60px;
 		font-weight: normal;
 		font-size: 50px;
+
 	}
 
 	.img-header{
@@ -946,4 +955,90 @@ background-color: #49a7f3;
     margin: 0 auto;
     padding: 30px;
 }
+
+/*----*/
+
+	.reviews-wrapp{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2;
+		justify-content: center;
+	}
+
+	.comment{
+		order: -1;
+	}
+
+	.comment p{
+		text-align: center;
+		padding: 0 50px;
+	}
+
+	.comment-slider{
+		display: inline-flex;
+		justify-content: space-between;
+		width: 100%;
+		position: relative;
+		top: -50%;
+	}
+
+	.subscribe-news-wrapp{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.subscribe-news-wrapp form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.subscribe-news-wrapp .input-text, .input-button{
+		border-radius: 40px;
+	}
+
+	.subscribe-news-wrapp .input-button{
+		border-radius: 40px;
+		width: 50%;
+		padding: 10px 20px;
+		margin-top:20px;
+	}	
+
+/*----*/
+
+
+	.latest-news-wrapp{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+/*----*/
+
+
+	.footer-menu{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.footer-resources, .footer-quick-links {
+    margin: 0;
+	}
+
+/*--*/
+
+	.footer-bottom{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		text-align: center;
+
+	}
+
+	.footer-terms{
+		display: inline-block;
+		flex-wrap: wrap;
+	}
+
 }
