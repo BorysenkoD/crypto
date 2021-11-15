@@ -259,6 +259,7 @@ body{
 }
 
 .get-started-card{
+	position: relative;
 	background-color: white;
 	box-shadow: 0 5px 20px 0 #c2c2c2;
 	padding: 20px;
@@ -275,19 +276,28 @@ body{
 }
 
 .get-started-card-icon{
+
 	padding: 10px;
 	width: auto;
 	height: 35px;
 }
 
-.decor{
-	display: grid;
-	grid-template-columns: 25% 25% 25%;
-	margin: 0 auto;
-	margin-top: 30px;
-	width: 70%;
-	column-gap: 90px;
+.get-started-card::before{
+	position: absolute;
+	content: "";
+	background: url("../img/process-line.png") no-repeat;
+	width: 285px;
+	height: 70px;
+	z-index: 5;
+	top: -37px;
+  left: 214px;
 }
+
+.get-started-card:last-child::before{
+	display: none;
+}
+
+
 
 .decor img {
 	width: 245px;
@@ -305,7 +315,7 @@ body{
 .get-started-description{
 	font-size: 14px;
 	color: #75849a;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 /*----------*/
@@ -817,7 +827,7 @@ background-color: #49a7f3;
 
 
 
-@media (max-width: 995px){
+@media screen and (max-width: 985px){
 
 	.top-header-mini{
 		display: inline-flex;
@@ -856,7 +866,7 @@ background-color: #49a7f3;
 		margin: 0 auto;
 	}
 
-	.decor{
+	.get-started-card::before{
 		display: none;
 	}
 
@@ -883,7 +893,7 @@ background-color: #49a7f3;
 	}
 
 	.team-list ul li {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     padding: 30px;
 }
