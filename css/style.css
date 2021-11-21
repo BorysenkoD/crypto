@@ -1119,8 +1119,12 @@ body{
 
 	.latest-news-wrapp{
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 20px;
+	}
+	
+	.news-card{
+		width: 320px;
 	}
 
 /*----*/
