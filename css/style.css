@@ -1121,6 +1121,7 @@ body{
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
+		justify-content: center;
 	}
 	
 	.news-card{
@@ -1134,6 +1135,7 @@ body{
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		
 	}
 
 	.footer-resources, .footer-quick-links {
