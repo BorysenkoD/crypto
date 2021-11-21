@@ -1056,12 +1056,12 @@ body{
 
 	.team-list ul{
 		display: inline-flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 15px;
 	}
 
 	.team-list ul li {
-    width: 60%;
+    width: 320px;
     margin: 0 auto;
     padding: 30px;
 }
